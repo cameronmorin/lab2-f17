@@ -68,7 +68,7 @@ exec(char *path, char **argv)
   clearpteu(pgdir, (char*)(sz - 2*PGSIZE));
   sp = sz;
 
-  // Push argument strings, prepare rest of stack in ustack.
+  // Push argument strings, prepare rest of stack in ustack. --------> Initialize user stack
   for(argc = 0; argv[argc]; argc++) {
     if(argc >= MAXARG)
       goto bad;

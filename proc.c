@@ -199,7 +199,7 @@ fork(void)
   np->sz = curproc->sz;
   np->parent = curproc;
   *np->tf = *curproc->tf;
-  np->kstack = curproc->kstack;
+  np->kstack = curproc->kstack;					//ADDED LAB3: copys loc of kernal stack
 
   // Clear %eax so that fork returns 0 in the child.
   np->tf->eax = 0;

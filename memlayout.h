@@ -8,7 +8,7 @@
 #define KERNBASE 0x80000000         // First kernel virtual address
 #define KERNLINK (KERNBASE+EXTMEM)  // Address where kernel is linked
 
-#define USERSTACK (KERNBASE-4)      //Start of the user stack ADDED LAB3
+#define USERSTACKBASE (KERNBASE-4)      //Start of the user stack ADDED LAB3
 
 #define V2P(a) (((uint) (a)) - KERNBASE)
 #define P2V(a) (((void *) (a)) + KERNBASE)

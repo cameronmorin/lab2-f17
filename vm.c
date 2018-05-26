@@ -382,7 +382,7 @@ copyuvm(pde_t *pgdir, uint sz, uint stackSize)
   }
 
                                                                                       //ADDED LAB3
-  for (i = USERSTACKBASE - PGESIZE + 1; stackSize > 0; i -= PGSIZE, stackSize--) {
+  for (i = USERSTACKBASE - PGSIZE + 1; stackSize > 0; i -= PGSIZE, stackSize--) {
     if((pte = walkpgdir(pgdir, (void *) i, 0)) == 0)
       panic("copyuvm: pte should exist");
     if(!(*pte & PTE_P))

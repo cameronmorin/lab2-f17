@@ -19,7 +19,7 @@ fetchint(uint addr, int *ip)
 {
   //struct proc *curproc = myproc();
                                                               //ADDED LAB3 (commented out)
-  if(addr >= USERSTACKBASE || addr+4 > curproc->sz)
+  if(addr >= USERSTACKBASE || addr+4 > USERSTACKBASE)
    return -1;
   *ip = *(int*)(addr);
   return 0;

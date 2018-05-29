@@ -1,7 +1,8 @@
  #include "types.h"
  #include "stat.h"
  #include "user.h"
- 
+
+
 //int test(int n)
 //{ 
 //   int x = n + 1;
@@ -24,7 +25,7 @@
      return n;
    }
 
-   if (n % 10 == 0) {
+   if (n == 50 || n == 60 || n == 70 || n == 80 || n == 90) {
        printf(1, "%d\n", n);
    }
 

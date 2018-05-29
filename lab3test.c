@@ -26,11 +26,7 @@ int main(int argc, char const *argv[]) {
   printf(1, "fib(20) = %d\n", fib(20));
   printf(1, "fib(30) = %d\n", fib(30));
   printf(1, "fib(40) = %d\n", fib(40));
-  printf(1, "fib(50) = %d\n", fib(50));
-  printf(1, "fib(60) = %d\n", fib(60));
-  printf(1, "WE GOT HERE %d\n");
-  printf(1, "fib(90) = %d\n", fib(90));
-  printf(1, "We got past fib(90) %d\n");
+
 
   exit();
   return 0;

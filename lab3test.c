@@ -42,7 +42,7 @@
     printf(1, "fib(30) = %d\n", fib(30));
     printf(1, "fib(35) = %d\n", fib(35));
     printf(1, "fib(40) = %d\n", fib(40));
-    printf(1, "fib(45) = %d\n", fib(45));
+    printf(1, "fib(90) = %d\n", fib(90));
 
 
    exit();

@@ -64,8 +64,8 @@ exec(char *path, char **argv)
   // Make the first inaccessible.  Use the second as the user stack.
   sz = PGROUNDUP(sz);
   uint szStack = KERNBASE - PGSIZE;                                   //ADDED LAB3
-  if((szStack = allocuvm(pgdir, szStack, szStack + 8)) == 0)               //ADDED LAB3
-    goto bad;
+  if((szStack = allocuvm(pgdir, szStack, szStack + 8)) == 0)          //ADDED LAB3
+    goto bad;                                                         //ADDED LAB3
   //clearpteu(pgdir, (char*)(sz - 2*PGSIZE));
   sp = USERSTACKBASE;                                                 //ADDED LAB3
 

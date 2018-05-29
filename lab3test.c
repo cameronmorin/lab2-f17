@@ -29,6 +29,6 @@ int main(int argc, char const *argv[]) {
 
   printf(1, "fib(90) = %d\n", fib(90));
 
-  exit(0);
+  exit();
   return 0;
 }

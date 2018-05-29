@@ -6,8 +6,8 @@ int fib(int);
 
 int main(int argc, char** argv) {
 
-    fib(100);
-
+    fib(101);
+	//returnZero(1000);
     exit();
     return 0;
 }

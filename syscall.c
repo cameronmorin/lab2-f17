@@ -34,8 +34,8 @@ fetchstr(uint addr, char **pp)
   char *s, *ep;
   // struct proc *curproc = myproc();
 
-  // if(addr >= curproc->sz)
-    // return -1;                                              //ADDED LAB3
+  if(addr >= USERSTACKBASE)
+    return -1;                                              //ADDED LAB3
   *pp = (char*)addr;
   ep = (char*)USERSTACKBASE;
   for(s = *pp; s < ep; s++){

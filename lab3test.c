@@ -30,7 +30,7 @@ int main(int argc, char const *argv[]) {
   printf(1, "fib(60) = %d\n", fib(60));
   printf(1, "WE GOT HERE %d\n");
   printf(1, "fib(90) = %d\n", fib(90));
-  printf(1, "We got past fib(90) %d\n")
+  printf(1, "We got past fib(90) %d\n");
 
   exit();
   return 0;

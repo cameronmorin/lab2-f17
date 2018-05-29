@@ -1,31 +1,34 @@
 #include "types.h"
+#include "stat.h"
 #include "user.h"
 
-unsigned long returnZero(unsigned long);
-int fib(int);
+uint fib(uint n) {
+  if (n == 0 || n == 1) {
+    return n;
+  }
 
-int main(int argc, char** argv) {
+  return fib(n - 1) + fib(n - 2);
+} 
 
-    fib(101);
-	//returnZero(1000);
-    exit();
+int returnzero(int n) {
+  // int data[10000];
+  // data[0] = 0;
+  if (n == 0) {
     return 0;
+  }
+
+  printf(1, "%d\n", n);
+  return returnzero(--n);
 }
 
-int fib(int n) {
-    if (n == 0) return 0;
-    if (n == 1) return 1;
+int main(int argc, char const *argv[]) {
+  printf(1, "fib(10) = %d\n", fib(10));
+  printf(1, "fib(20) = %d\n", fib(20));
+  printf(1, "fib(30) = %d\n", fib(30));
+  printf(1, "fib(40) = %d\n", fib(40));
 
-    return fib(n-1) + fib(n-2);
-}
+  printf(1, "fib(90) = %d\n", fib(90));
 
-unsigned long returnZero(unsigned long num) {
-    int arr[1000];
-
-    arr[0] = 0;
-
-    if (num == arr[0])
-        return 0;
-    
-    return returnZero(num - 1);
+  exit(0);
+  return 0;
 }
